@@ -1,1 +1,9 @@
-<p>products works!</p>
+
+<h2> List All Products</h2>
+
+<div *ngIf="showProducts">
+    <p *ngFor="let product of products">
+        {{product.pid}} || {{product.name}} || {{product.price}} || {{product.ratings}}
+    </p>
+</div>
+
