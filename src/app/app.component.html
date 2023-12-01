@@ -7,6 +7,8 @@
         <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="/account">Accounts</a></li>
 
         <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="/service">Services</a></li>
+
+        <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="/fetch-news">Fetch News</a></li>
       </ul>
     </div>
 
@@ -15,10 +17,14 @@
 
 <div class="container">
  <div class="row">
-   <p>Creating a new branch in Git is a way of creating a separate version of the main repository,
-     where you can work on different parts of a project without affecting the main branch.
-     When you are done with your work, you can merge your branch with the main branch to update the changes</p>
+   <p>{{name}}</p>
+   <p>{{namePromise | async}}</p>
  </div>
+
+ <div class="container">
+  <div class="row">
+    <p>  {{counter}} </p>
+  </div>
 
  <div class="row">
    <div class="col-md-12">

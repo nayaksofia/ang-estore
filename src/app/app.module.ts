@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { ProductsComponent } from './products/products.component';
 import { AccountComponent } from './account/account.component';
 import { ServiceComponent } from './service/service.component';
+import {HttpClientModule}  from '@angular/common/http';
+import { FetchNewsComponent } from './fetch-news/fetch-news.component';
 
 
 @NgModule({
@@ -17,13 +19,17 @@ import { ServiceComponent } from './service/service.component';
     HomeComponent,
     ProductsComponent,
     AccountComponent,
-    ServiceComponent
+    ServiceComponent,
+    FetchNewsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserModule,
+    //import HttpClientModule after Browser Module 
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

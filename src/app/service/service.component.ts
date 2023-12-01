@@ -1,3 +1,4 @@
+import { createInjectableType } from '@angular/compiler';
 import { Component } from '@angular/core';
 
 @Component({
@@ -5,6 +6,7 @@ import { Component } from '@angular/core';
   templateUrl: './service.component.html',
   styleUrls: ['./service.component.css']
 })
+
 export class ServiceComponent {
 
 }

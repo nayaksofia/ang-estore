@@ -1,4 +1,5 @@
 import { Component,OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,12 +8,18 @@ import { Component,OnInit, Input } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-@Input() name = 'NA';
+  userId = 'UID0023';
 
-constructor(){}
+// @Input() name = 'NA';
+
+constructor( private router: Router){}
 
 ngOnInit(): void{
 
+}
+
+navigateToAccount(){
+  this.router.navigate(['/account']);
 }
 
 }
