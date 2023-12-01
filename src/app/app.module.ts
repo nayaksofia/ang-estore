@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
 import { HomeComponent } from './home/home.component';
 import { ProductsComponent } from './products/products.component';
+import { AccountComponent } from './account/account.component';
+import { ServiceComponent } from './service/service.component';
 
 
 @NgModule({
@@ -13,7 +15,9 @@ import { ProductsComponent } from './products/products.component';
     AppComponent,
     ProfileComponent,
     HomeComponent,
-    ProductsComponent
+    ProductsComponent,
+    AccountComponent,
+    ServiceComponent
   ],
   imports: [
     BrowserModule,
