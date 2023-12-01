@@ -9,7 +9,7 @@ import { ProductsComponent } from './products/products.component';
 import { AccountComponent } from './account/account.component';
 import { ServiceComponent } from './service/service.component';
 import {HttpClientModule}  from '@angular/common/http';
-import { FetchNewsComponent } from './fetch-news/fetch-news.component';
+import { UserComponent } from './user/user.component';
 
 
 @NgModule({
@@ -20,7 +20,7 @@ import { FetchNewsComponent } from './fetch-news/fetch-news.component';
     ProductsComponent,
     AccountComponent,
     ServiceComponent,
-    FetchNewsComponent
+    UserComponent
   ],
   imports: [
     BrowserModule,

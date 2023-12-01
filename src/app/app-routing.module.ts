@@ -5,7 +5,8 @@ import { HomeComponent } from './home/home.component';
 import { ProductsComponent } from './products/products.component';
 import { AccountComponent } from './account/account.component';
 import { ServiceComponent } from './service/service.component';
-import { FetchNewsComponent } from './fetch-news/fetch-news.component';
+import { UserComponent } from './user/user.component';
+
 
 //Create a jshon object which have path
 const routes: Routes = [
@@ -15,7 +16,8 @@ const routes: Routes = [
  {path:'service', component:ServiceComponent},
  {path:'products', component:ProductsComponent},
  {path:'profile', component:ProfileComponent},
- {path:'fetch-news',component:FetchNewsComponent}
+ {path:'user', component:UserComponent}
+ 
 ];
 
 @NgModule({

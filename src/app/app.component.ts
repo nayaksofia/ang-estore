@@ -28,17 +28,17 @@ export class AppComponent implements OnInit, OnDestroy {
   }
   
   ngOnInit(): void{
-   this. observable = new Observable((observer:Observer<number>)=>{
-    let value = 0
-    setInterval(
-      ()=> {
-        observer.next(value++);
-      },1000
-    );
-   });
-   this.subscription = this.observable.subscribe((value:number)=>{
-    this.counter=value;
-   });
+  //  this. observable = new Observable((observer:Observer<number>)=>{
+  //   let value = 0
+  //   setInterval(
+  //     ()=> {
+  //       observer.next(value++);
+  //     },1000
+  //   );
+  //  });
+  //  this.subscription = this.observable.subscribe((value:number)=>{
+  //   this.counter=value;
+  //  });
   }
 
   ngOnDestroy(): void {
