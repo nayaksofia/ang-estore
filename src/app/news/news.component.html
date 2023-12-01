@@ -1,0 +1,18 @@
+<h1>News Data::</h1>
+
+<div *ngIf="newsData">
+    <h2> Status: {{newsData.status}}</h2>
+    <h2>Total Results:: {{newsData.totalResults}}</h2>
+
+    <div *ngIf="newsData.articles && newsData.articles.length > 0">
+        <h3>Articles:</h3>
+        <ul>
+            <li *ngFor="let article of newsData.articles">
+                <h4>Title:: {{article.title}}</h4>
+                <p>Author:: {{article.author}}</p>
+                <p>Descriptions: {{article.description}}</p>
+            </li>
+        </ul>
+    </div>
+
+</div>

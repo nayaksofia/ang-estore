@@ -10,6 +10,7 @@ import { AccountComponent } from './account/account.component';
 import { ServiceComponent } from './service/service.component';
 import {HttpClientModule}  from '@angular/common/http';
 import { UserComponent } from './user/user.component';
+import { NewsComponent } from './news/news.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { UserComponent } from './user/user.component';
     ProductsComponent,
     AccountComponent,
     ServiceComponent,
-    UserComponent
+    UserComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,

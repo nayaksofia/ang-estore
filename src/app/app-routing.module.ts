@@ -6,6 +6,7 @@ import { ProductsComponent } from './products/products.component';
 import { AccountComponent } from './account/account.component';
 import { ServiceComponent } from './service/service.component';
 import { UserComponent } from './user/user.component';
+import { NewsComponent } from './news/news.component';
 
 
 //Create a jshon object which have path
@@ -16,7 +17,8 @@ const routes: Routes = [
  {path:'service', component:ServiceComponent},
  {path:'products', component:ProductsComponent},
  {path:'profile', component:ProfileComponent},
- {path:'user', component:UserComponent}
+ {path:'user', component:UserComponent},
+ {path:'news', component:NewsComponent}
  
 ];
 
